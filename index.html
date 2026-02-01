@@ -13,4 +13,16 @@
     <img src="/Computer-science-job/63446898903ccf8ff26166990e947d43.png" style="width:100%; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.3);">
     </div>
   </body>
+  <script>
+  window.onload = function() {
+    var paragraphs = document.getElementsByTagName('p');
+    for(var i=0; i<paragraphs.length; i++) {
+      if(paragraphs[i].innerText.includes('Insert Tableau Dashboard')) {
+        var box = paragraphs[i].parentElement;
+        box.innerHTML = '<img src="/Computer-science-job/63446898903ccf8ff26166990e947d43.png" alt="quantitative strategy backtesting" style="width:100%; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">';
+        break;
+      }
+    }
+  };
+</script>
 </html>
